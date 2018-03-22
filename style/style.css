@@ -5,6 +5,7 @@ html {
     max-width: 2000px;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .container {
@@ -20,12 +21,12 @@ html {
     height: 40px;
     background-color: white;
     position:static;
-  
+    padding-top: 10px;
 }
 
 .tophead p{
     text-align: right;
-      margin-right: 25px;
+    margin-right: 25px;
     color:#14a714; 
     letter-spacing: 1px;
 }
@@ -34,7 +35,24 @@ html {
     background: linear-gradient(rgba(164, 237, 164, 0.71), #ffffff);
     height: 90px;
     border-top: 2px solid rgba(75, 181, 75, 0.69);
-    border-bottom: 2px solid rgba(75, 181, 75, 0.69);
+  
+    font-weight: bold;
+}
+
+.carousel-caption {
+    bottom:100px;
+    color:black;
+    background-color: #ffffff;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    color:#14a714; 
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5);
+   }
+
+.carousel-indicators{
+    display:none;
 }
 
 .info-box {
@@ -58,6 +76,13 @@ html {
     text-align: center;
 }
 
+.big-title{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top:20px;
+    margin-bottom: 15px;
+}
+
 .information-box {
     position: relative;
     top: -50px;
@@ -65,4 +90,58 @@ html {
 
 .box-information {
     font-size: 0.8rem;
+}
+
+.info-box .btn{
+    margin-top: 30px;
+    width: 200px;
+    background-color: #43af43;
+}
+
+.main-information{
+    background-color: #ffffff;
+    padding-bottom: 4rem;
+    border-top: 2px solid rgba(75, 181, 75, 0.69);
+    border-bottom: 2px solid rgba(75, 181, 75, 0.69);
+}
+
+.right-information img{
+    border-radius: 10px;
+}
+
+.left-information p{
+    font-size:1.5rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+.patient-area{
+    background-color: #798973;
+    color:white;
+    
+}
+
+.buttons-pdf{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.buttons-pdf .btn{
+    margin-top: 30px;
+    width: 380px;
+    background-color: #ffffff;
+    margin-right: auto;
+   color:#14a714; 
+    height: 60px;
+    border-radius: 30px;
+}
+
+.buttons-pdf .btn:hover{
+    background-color: rgba(60, 62, 60, 0.69);
+    color:#ffffff;
+}
+
+.buttons-pdf .fas{
+    font-size:30px;
 }
