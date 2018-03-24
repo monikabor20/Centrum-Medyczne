@@ -1,4 +1,4 @@
- jQuery(document).ready(function ($) {
+jQuery(document).ready(function ($) {
 
      var slider_options = {
          $AutoPlay: 1,
@@ -12,9 +12,7 @@
 
      var slider_slider = new $JssorSlider$("slider", slider_options);
 
-     /*#region responsive code begin*/
-
-     var MAX_WIDTH = 980;
+     var MAX_WIDTH = 1400;
 
      function ScaleSlider() {
          var containerElement = slider_slider.$Elmt.parentNode;
@@ -37,3 +35,6 @@
      $(window).bind("orientationchange", ScaleSlider);
      /*#endregion responsive code end*/
  });
+
+
+
