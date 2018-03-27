@@ -10,22 +10,19 @@ html,
 body {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-color: whitesmoke !important;
+    background-image: url("../foto/background.jpg");
+    font-family: 'Sansita', sans-serif;
 }
 
 .container {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1400px;
     padding: 0px;
+    overflow: hidden;
 }
 
 .tophead {
     height: 40px;
-    background-color: white;
+
     position: static;
     padding-top: 10px;
 }
@@ -38,26 +35,38 @@ body {
 }
 
 .navbar {
-    background: linear-gradient(rgba(164, 237, 164, 0.71), #ffffff);
+    background-color: #ffffff;
     height: 90px;
-    border-top: 2px solid rgba(75, 181, 75, 0.69);
+    border-top: 1px solid rgba(130, 191, 130, 0.5);
     font-weight: bold;
 }
 
-.navbar-light .navbar-brand{
-    font-size: 1.2rem;
-    color:#43af43;
+.navbar-light .navbar-brand {
+    font-size: 1.5rem;
+    color: #43af43;
+    padding: 0px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #43af43;
 }
 
 .nav-link {
     background-color: white;
+    font-size: 14px;
+}
+
+#myCarousel {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .carousel-caption {
     bottom: 100px;
-    color: black;
-    background-color: #ffffff;
-    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.83);
+    max-width: 400px;
+    max-height: 60px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 40px;
@@ -65,19 +74,24 @@ body {
     box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5);
 }
 
+.carousel-caption h3 {
+    font-size: 1.3rem;
+    padding-top: 0;
+}
+
 .carousel-indicators {
     display: none;
 }
 
 .info-box {
-    border: 3px solid #43af43;
+    border: 1px solid rgba(190, 190, 190, 0.29);
     padding: 1rem;
     border-radius: 20px;
     background-color: white;
     max-width: 320px;
     margin-right: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
-
 
 .icon-box {
     background-color: #43af43;
@@ -96,6 +110,7 @@ body {
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 15px;
+    color: grey;
 }
 
 .information-box {
@@ -105,19 +120,26 @@ body {
 
 .box-information {
     font-size: 0.8rem;
+    color: grey;
+    font-size: 0.9rem;
 }
 
 .info-box .btn {
     margin-top: 30px;
-    width: 200px;
+    width: 180px;
     background-color: #43af43;
+}
+
+.info-box .btn:hover {
+    background-color: #337e33;
+    transform: scale(1.15, 1.27);
 }
 
 .main-information {
     background-color: #ffffff;
     padding-bottom: 4rem;
-    border-top: 2px solid rgba(75, 181, 75, 0.69);
-    border-bottom: 2px solid rgba(75, 181, 75, 0.69);
+    border-top: 1px solid rgba(75, 181, 75, 0.69);
+    border-bottom: 1px solid rgba(75, 181, 75, 0.69);
 }
 
 .right-information img {
@@ -128,11 +150,20 @@ body {
     font-size: 1.5rem;
     text-align: left;
     font-weight: bold;
+    color: grey;
+}
+
+.left-information ul {
+    color: grey;
 }
 
 .patient-area {
-    background-color: #798973;
+    background-color: rgba(98, 137, 96, 0.87);
     color: white;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .buttons-pdf .btn {
@@ -153,7 +184,7 @@ body {
     height: 60px;
     border-radius: 30px;
     margin-left: 25px;
-    font-size:14px;
+    font-size: 14px;
 }
 
 .buttons-pdf .btn:hover {
@@ -184,15 +215,19 @@ body {
     font-size: 28px;
 }
 
-#slider{
-    position:relative;
-    margin:0 auto;
-    top:0px;
-    left:0px;
-    width:980px;
-    height:160px;
-    overflow:hidden;
-    visibility:hidden;
+.patient-area-text {
+    font-size: 1.2rem;
+}
+
+#slider {
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    width: 980px;
+    height: 160px;
+    overflow: hidden;
+    visibility: hidden;
 }
 
 .slider-gallery {
@@ -221,21 +256,38 @@ body {
     }
 }
 
-.btn submit{
+.btn submit {
     background-color: #43af43;
 }
 
+.form-contact {
+    color: #43af43;
+}
+
+placeholder {
+    color: rgba(185, 180, 180, 0.17);
+}
+
+.adress {
+    color: grey;
+}
+
+.submit {
+    color: #14a714;
+}
 
 footer {
     background-color: #14a714;
     color: #000000;
     position: absolute;
+    max-height: 40px;
 }
 
 footer p {
     padding: 15px;
-    font-size: 10px;
+    font-size: 9px;
     letter-spacing: 2px;
+    margin-bottom: 0;
 }
 
 @media (min-width: 576px) {
@@ -247,7 +299,7 @@ footer p {
         height: 60px;
         border-radius: 30px;
         margin-left: 25px;
-        font-size:16px;
+        font-size: 16px;
     }
 }
 
@@ -255,14 +307,15 @@ footer p {
     .nav-link {
         background-color: transparent;
     }
-}
 
-
-@media (min-width: 992px) {
-    ...
-}
-
-
-@media (min-width: 1200px) {
-    ...
+    .patient-area {
+        padding-left: 40px;
+        padding-right: 40px;
+        background-image: url("../foto/green-medical-background.jpg");
+        color: white;
+        position: relative;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
 }
